@@ -72,4 +72,4 @@ if (empty($movieTitles)) {
 $output .= $tableFooter;
 
 echo $output;
-echo "\n<br>\nHier die URL der Seite die gecrawlt wurde: <a href='" . $url . "' target='_blank'>" . $url . "</a>";
+echo "\n<br>\nHier die URL der Seite, die gecrawlt wurde: <a href='" . $url . "' target='_blank'>" . $url . "</a>";
