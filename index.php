@@ -1,4 +1,5 @@
 <?php
+const year = new Date().getFullYear();
 
 $curl = curl_init();
 $requestType = "GET";
@@ -48,7 +49,7 @@ $tableHeader = "<table style='border: 1px solid black; border-collapse: collapse
 $tableHeader .= "\t<thead>\n";
 $tableHeader .= "\t\t<tr>\n";
 $tableHeader .= "\t\t\t<th colspan='2' style='border: 1px solid black; padding: 4px;'>\n";
-$tableHeader .= "\t\t\t\t" . htmlentities($weekendText ? $weekendText : 'Kein Wochenende angegeben', ENT_QUOTES, 'UTF-8') . "\n";
+$tableHeader .= "\t\t\t\t" . htmlentities($weekendText ? $weekendText + ' ' + year : 'Kein Wochenende angegeben', ENT_QUOTES, 'UTF-8') . "\n";
 $tableHeader .= "\t\t\t</th>\n";
 $tableHeader .= "\t\t</tr>\n";
 $tableHeader .= "\t</thead>\n";
